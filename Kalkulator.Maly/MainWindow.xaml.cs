@@ -20,6 +20,7 @@ namespace Kalkulator.Maly
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static string operacja;
         public MainWindow()
         {
             InitializeComponent();
@@ -63,6 +64,22 @@ namespace Kalkulator.Maly
             }
 
         }
-    }
 
+        private void Dzialania(object sender, RoutedEventArgs e)
+        {
+            switch (((Button)sender).Content.ToString())
+            {
+                case "+":
+                    operacja = "+"; break;
+                case "-":
+                    operacja = "-"; break;
+                case "*":
+                    operacja = "*"; break;
+                case "/":
+                    operacja = "/"; break;
+
+            }
+        }
+
+    }
 }

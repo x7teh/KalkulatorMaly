@@ -8,17 +8,17 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Button x:Name="button_Equals" Content="=" HorizontalAlignment="Left" Margin="477,248,0,0" VerticalAlignment="Top" Width="30" Height="65"/>
-        <Button x:Name="button_plus" Content="+" HorizontalAlignment="Left" Margin="442,283,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_plus" Content="+" HorizontalAlignment="Left" Margin="442,283,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Dzialania"/>
         <Button x:Name="button_coma" Content="," HorizontalAlignment="Left" Margin="407,283,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_minus" Content="-" HorizontalAlignment="Left" Margin="442,248,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_minus" Content="-" HorizontalAlignment="Left" Margin="442,248,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Dzialania"/>
         <Button x:Name="button_3" Content="3" HorizontalAlignment="Left" Margin="407,248,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
         <Button x:Name="button_ulamek" Content="1/x" HorizontalAlignment="Left" Margin="477,213,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_razy" Content="*" HorizontalAlignment="Left" Margin="442,213,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_razy" Content="*" HorizontalAlignment="Left" Margin="442,213,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Dzialania"/>
         <Button x:Name="button_6" Content="6" HorizontalAlignment="Left" Margin="407,213,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
         <Button x:Name="button_procent" Content="%" HorizontalAlignment="Left" Margin="477,178,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_Copy7" Content="Button" HorizontalAlignment="Left" Margin="477,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_sqrt" Content="√" HorizontalAlignment="Left" Margin="477,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_Copy8" Content="Button" HorizontalAlignment="Left" Margin="477,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_dziel" Content="/" HorizontalAlignment="Left" Margin="442,178,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_dziel" Content="/" HorizontalAlignment="Left" Margin="442,178,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Dzialania"/>
         <Button x:Name="button_Copy10" Content="Button" HorizontalAlignment="Left" Margin="442,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_Copy11" Content="Button" HorizontalAlignment="Left" Margin="442,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_9" Content="9" HorizontalAlignment="Left" Margin="407,178,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
@@ -33,7 +33,7 @@
         <Button x:Name="button_1" Content="1" HorizontalAlignment="Left" Margin="337,248,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
         <Button x:Name="button_4" Content="4" HorizontalAlignment="Left" Margin="337,213,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
         <Button x:Name="button_7" Content="7" HorizontalAlignment="Left" Margin="337,178,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
-        <Button x:Name="button_Copy24" Content="Button" HorizontalAlignment="Left" Margin="337,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_backspace" Content="bs" HorizontalAlignment="Left" Margin="337,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_Copy25" Content="Button" HorizontalAlignment="Left" Margin="337,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <TextBox x:Name="ResultBox" HorizontalAlignment="Left" Height="93" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" FontFamily="Calibri" FontSize="14" FlowDirection="RightToLeft"/>
 
