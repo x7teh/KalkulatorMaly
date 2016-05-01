@@ -98,13 +98,13 @@ namespace Kalkulator.Maly
             switch (operacja)
             {
                 case "+":
-                    liczba1 += liczba;
+                    liczba1 += liczba; break;
                 case "-":
-                    liczba1 -= liczba;
+                    liczba1 -= liczba; break;
                 case "/":
-                    liczba1 /= liczba;
+                    liczba1 /= liczba; break;
                 case "*":
-                    liczba1 *= liczba;
+                    liczba1 *= liczba; break;
             }
 
             ResultBox.Clear();
