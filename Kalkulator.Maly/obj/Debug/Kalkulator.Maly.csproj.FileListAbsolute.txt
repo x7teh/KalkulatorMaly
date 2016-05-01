@@ -1,0 +1,5 @@
+Z:\VisualStudio\GitHub\Kalkulator.Maly\Kalkulator.Maly\Kalkulator.Maly\bin\Debug\Kalkulator.Maly.exe.config
+Z:\VisualStudio\GitHub\Kalkulator.Maly\Kalkulator.Maly\Kalkulator.Maly\obj\Debug\Kalkulator.Maly.csprojResolveAssemblyReference.cache
+Z:\VisualStudio\GitHub\Kalkulator.Maly\Kalkulator.Maly\Kalkulator.Maly\obj\Debug\App.g.cs
+Z:\VisualStudio\GitHub\Kalkulator.Maly\Kalkulator.Maly\Kalkulator.Maly\obj\Debug\Kalkulator.Maly_MarkupCompile.cache
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\bin\Debug\Kalkulator.Maly.exe.config
