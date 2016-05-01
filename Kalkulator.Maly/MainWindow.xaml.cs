@@ -93,9 +93,22 @@ namespace Kalkulator.Maly
 
         private void button_Equals_Click(object sender, RoutedEventArgs e)
         {
+            double liczba = double.Parse(ResultBox.Text);
+
             switch (operacja)
+            {
                 case "+":
-                liczba1 += double.Parse(ResultBox.Text);
+                    liczba1 += liczba;
+                case "-":
+                    liczba1 -= liczba;
+                case "/":
+                    liczba1 /= liczba;
+                case "*":
+                    liczba1 *= liczba;
+            }
+
+            ResultBox.Clear();
+            ResultBox.Text += liczba1;
         }
     }
 }
