@@ -304,6 +304,12 @@ namespace Kalkulator.Maly {
             {
             case 1:
             this.button_Equals = ((System.Windows.Controls.Button)(target));
+            
+            #line 10 "..\..\MainWindow.xaml"
+            this.button_Equals.Click += new System.Windows.RoutedEventHandler(this.button_Equals_Click);
+            
+            #line default
+            #line hidden
             return;
             case 2:
             this.button_plus = ((System.Windows.Controls.Button)(target));

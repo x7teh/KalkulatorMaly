@@ -21,6 +21,8 @@ namespace Kalkulator.Maly
     public partial class MainWindow : Window
     {
         private static string operacja;
+        private static double liczba1;
+        private static bool nastepnaLiczbaKasuje;
         public MainWindow()
         {
             InitializeComponent();
@@ -29,6 +31,12 @@ namespace Kalkulator.Maly
 
         private void Clicker(object sender, RoutedEventArgs e)
         {
+            if (nastepnaLiczbaKasuje == true)
+            {
+                ResultBox.Clear();
+                nastepnaLiczbaKasuje = false;
+            }
+           
             switch (((Button)sender).Content.ToString())
             {
                 case "0":
@@ -79,7 +87,15 @@ namespace Kalkulator.Maly
                     operacja = "/"; break;
 
             }
+            liczba1 = double.Parse(ResultBox.Text);
+            nastepnaLiczbaKasuje = true;
         }
 
+        private void button_Equals_Click(object sender, RoutedEventArgs e)
+        {
+            switch (operacja)
+                case "+":
+                liczba1 += double.Parse(ResultBox.Text);
+        }
     }
 }
