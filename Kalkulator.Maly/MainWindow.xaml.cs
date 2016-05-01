@@ -22,6 +22,7 @@ namespace Kalkulator.Maly
     {
         private static string operacja;
         private static double liczba1;
+        private static double liczba2;
         private static bool nastepnaLiczbaKasuje;
         public MainWindow()
         {
@@ -31,6 +32,7 @@ namespace Kalkulator.Maly
 
         private void Clicker(object sender, RoutedEventArgs e)
         {
+            ResultBox.Clear();
             if (nastepnaLiczbaKasuje == true)
             {
                 ResultBox.Clear();
@@ -93,7 +95,7 @@ namespace Kalkulator.Maly
 
         private void button_Equals_Click(object sender, RoutedEventArgs e)
         {
-            double liczba = double.Parse(ResultBox.Text);
+            double liczba2 = double.Parse(ResultBox.Text);
 
             switch (operacja)
             {
