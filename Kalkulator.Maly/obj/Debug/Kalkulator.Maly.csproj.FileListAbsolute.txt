@@ -3,3 +3,16 @@ Z:\VisualStudio\GitHub\Kalkulator.Maly\Kalkulator.Maly\Kalkulator.Maly\obj\Debug
 Z:\VisualStudio\GitHub\Kalkulator.Maly\Kalkulator.Maly\Kalkulator.Maly\obj\Debug\App.g.cs
 Z:\VisualStudio\GitHub\Kalkulator.Maly\Kalkulator.Maly\Kalkulator.Maly\obj\Debug\Kalkulator.Maly_MarkupCompile.cache
 C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\bin\Debug\Kalkulator.Maly.exe.config
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\obj\Debug\Kalkulator.Maly.csprojResolveAssemblyReference.cache
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\obj\Debug\App.g.cs
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\obj\Debug\Kalkulator.Maly_MarkupCompile.cache
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\obj\Debug\MainWindow.g.cs
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\obj\Debug\Kalkulator.Maly_MarkupCompile.lref
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\bin\Debug\Kalkulator.Maly.exe
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\bin\Debug\Kalkulator.Maly.pdb
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\obj\Debug\MainWindow.baml
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\obj\Debug\Kalkulator.Maly.g.resources
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\obj\Debug\Kalkulator.Maly.Properties.Resources.resources
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\obj\Debug\Kalkulator.Maly.csproj.GenerateResource.Cache
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\obj\Debug\Kalkulator.Maly.exe
+C:\Users\x7\Documents\GitHub\KalkulatorMaly\Kalkulator.Maly\obj\Debug\Kalkulator.Maly.pdb

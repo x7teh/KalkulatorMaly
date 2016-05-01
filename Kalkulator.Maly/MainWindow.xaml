@@ -18,7 +18,7 @@
         <Button x:Name="button_procent" Content="%" HorizontalAlignment="Left" Margin="477,178,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_Copy7" Content="Button" HorizontalAlignment="Left" Margin="477,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_Copy8" Content="Button" HorizontalAlignment="Left" Margin="477,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_/" Content="/" HorizontalAlignment="Left" Margin="442,178,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_dziel" Content="/" HorizontalAlignment="Left" Margin="442,178,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_Copy10" Content="Button" HorizontalAlignment="Left" Margin="442,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_Copy11" Content="Button" HorizontalAlignment="Left" Margin="442,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_9" Content="9" HorizontalAlignment="Left" Margin="407,178,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
@@ -30,7 +30,7 @@
         <Button x:Name="button_8" Content="8" HorizontalAlignment="Left" Margin="372,178,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_Copy19" Content="Button" HorizontalAlignment="Left" Margin="372,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_Copy20" Content="Button" HorizontalAlignment="Left" Margin="372,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_1" Content="1" HorizontalAlignment="Left" Margin="337,248,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_1_Click"/>
+        <Button x:Name="button_1" Content="1" HorizontalAlignment="Left" Margin="337,248,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
         <Button x:Name="button_4" Content="4" HorizontalAlignment="Left" Margin="337,213,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_7" Content="7" HorizontalAlignment="Left" Margin="337,178,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_Copy24" Content="Button" HorizontalAlignment="Left" Margin="337,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>

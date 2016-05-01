@@ -25,24 +25,44 @@ namespace Kalkulator.Maly
             InitializeComponent();
         }
 
+
         private void Clicker(object sender, RoutedEventArgs e)
         {
-            switch(((Button)sender).Content.ToString())
+            switch (((Button)sender).Content.ToString())
+            {
                 case "0":
-                ResultBox.Text += "1";
-                break;
-                    
-                case "1";
-                case "2";
-                case "3";
-                case "4";
-                case "5";
-                case "6";
-                case "7";
-                case "8";
-                case "9";
+                    ResultBox.Text += "0";
+                    break;
+                case "1":
+                    ResultBox.Text += "1";
+                    break;
+                case "2":
+                    ResultBox.Text += "2";
+                    break;
+                case "3":
+                    ResultBox.Text += "3";
+                    break;
+                case "4":
+                    ResultBox.Text += "4";
+                    break;
+                case "5":
+                    ResultBox.Text += "5";
+                    break;
+                case "6":
+                    ResultBox.Text += "6";
+                    break;
+                case "7":
+                    ResultBox.Text += "7";
+                    break;
+                case "8":
+                    ResultBox.Text += "8";
+                    break;
+                case "9":
+                    ResultBox.Text += "9";
+                    break;
+            }
 
-               
         }
     }
+
 }
