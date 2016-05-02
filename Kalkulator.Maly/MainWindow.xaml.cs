@@ -23,6 +23,7 @@ namespace Kalkulator.Maly
         private static string operacja;
         private static double liczba1;
         private static double liczba2;
+        private static double wynik;
         private static bool sprawdzResultBox;
         private static bool nastepnaLiczbaKasuje;
         private static bool usedEqual; 
@@ -92,22 +93,47 @@ namespace Kalkulator.Maly
 
         private void button_Equals_Click(object sender, RoutedEventArgs e)
         {
-            double liczba2 = double.Parse(ResultBox.Text);
+            if (liczba2 == 0)
+            liczba2 = double.Parse(ResultBox.Text);
 
             switch (operacja)
             {
                 case "+":
-                    liczba1 += liczba2; break;
+                    wynik = liczba1 + liczba2; break;
                 case "-":
-                    liczba1 -= liczba2; break;
+                    wynik = liczba1 - liczba2; break;
                 case "/":
-                    liczba1 /= liczba2; break;
+                    wynik = liczba1 * liczba2; break;
                 case "*":
-                    liczba1 *= liczba2; break;
+                    wynik = liczba1 / liczba2; break;
             }
             usedEqual = true;
             ResultBox.Clear();
-            ResultBox.Text += liczba1;
+            ResultBox.Text += wynik;
+        }
+
+        private void button_CE_Click(object sender, RoutedEventArgs e)
+        {
+            ResultBox.Text = "0";
+        }
+
+        private void button_procent_Click(object sender, RoutedEventArgs e)
+        {
+            if (liczba2 == 0)
+            liczba2 = double.Parse(ResultBox.Text);
+            wynik = (liczba1 / 100) * liczba2;
+            ResultBox.Clear();
+            ResultBox.Text += wynik;
+        }
+
+        private void button_sqrt_Click(object sender, RoutedEventArgs e)
+        {
+            liczba1 = double.Parse(ResultBox.Text);
+            if (liczba1 == 0) return;
+            wynik = Math.Sqrt(liczba1);
+            ResultBox.Clear();
+            ResultBox.Text += wynik;
+
         }
     }
 }
