@@ -25,6 +25,7 @@ namespace Kalkulator.Maly
         private static double liczba2;
         private static bool sprawdzResultBox;
         private static bool nastepnaLiczbaKasuje;
+        private static bool usedEqual; 
         public MainWindow()
         {
             InitializeComponent();
@@ -39,8 +40,12 @@ namespace Kalkulator.Maly
                 ResultBox.Clear();
                 nastepnaLiczbaKasuje = false;
             }
-           
-            switch (((Button)sender).Content.ToString())
+            if (usedEqual == true)
+            {
+                ResultBox.Clear();
+                usedEqual = false;
+            }
+                switch (((Button)sender).Content.ToString())
             {
                 case "1":
                 case "2":
@@ -100,7 +105,7 @@ namespace Kalkulator.Maly
                 case "*":
                     liczba1 *= liczba2; break;
             }
-
+            usedEqual = true;
             ResultBox.Clear();
             ResultBox.Text += liczba1;
         }
