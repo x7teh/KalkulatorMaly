@@ -26,7 +26,6 @@ namespace Kalkulator.Maly
         private static double wynik;
         private static bool sprawdzResultBox;
         private static bool nastepnaLiczbaKasuje;
-        private static bool usedEqual; 
         public MainWindow()
         {
             InitializeComponent();
@@ -41,11 +40,7 @@ namespace Kalkulator.Maly
                 ResultBox.Clear();
                 nastepnaLiczbaKasuje = false;
             }
-            if (usedEqual == true)
-            {
-                ResultBox.Clear();
-                usedEqual = false;
-            }
+        
                 switch (((Button)sender).Content.ToString())
             {
                 case "1":
@@ -93,7 +88,7 @@ namespace Kalkulator.Maly
 
         private void button_Equals_Click(object sender, RoutedEventArgs e)
         {
-            if (liczba2 == 0)
+            
             liczba2 = double.Parse(ResultBox.Text);
 
             switch (operacja)
@@ -103,13 +98,14 @@ namespace Kalkulator.Maly
                 case "-":
                     wynik = liczba1 - liczba2; break;
                 case "/":
-                    wynik = liczba1 * liczba2; break;
-                case "*":
                     wynik = liczba1 / liczba2; break;
+                case "*":
+                    wynik = liczba1 * liczba2; break;
             }
-            usedEqual = true;
+            
             ResultBox.Clear();
             ResultBox.Text += wynik;
+            nastepnaLiczbaKasuje = true;
         }
 
         private void button_CE_Click(object sender, RoutedEventArgs e)
@@ -122,8 +118,10 @@ namespace Kalkulator.Maly
             if (liczba2 == 0)
             liczba2 = double.Parse(ResultBox.Text);
             wynik = (liczba1 / 100) * liczba2;
+
             ResultBox.Clear();
-            ResultBox.Text += wynik;
+            ResultBox.Text += wynik;            // jakas funkcje pasowaloby zrobic zeby nie klepac tego ciagle
+            nastepnaLiczbaKasuje = true;
         }
 
         private void button_sqrt_Click(object sender, RoutedEventArgs e)
@@ -133,7 +131,18 @@ namespace Kalkulator.Maly
             wynik = Math.Sqrt(liczba1);
             ResultBox.Clear();
             ResultBox.Text += wynik;
+            nastepnaLiczbaKasuje = true;
 
+        }
+
+        private void button_ulamek_Click(object sender, RoutedEventArgs e)
+        {
+            liczba1 = double.Parse(ResultBox.Text);
+            if (liczba1 == 0) return;
+            wynik = 1 / liczba1;
+            ResultBox.Clear();
+            ResultBox.Text += wynik;
+            nastepnaLiczbaKasuje = true;
         }
     }
 }

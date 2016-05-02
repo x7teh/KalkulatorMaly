@@ -24,7 +24,7 @@
         <Button x:Name="button_8" Content="8" HorizontalAlignment="Left" Margin="45,123,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
         <Button x:Name="button_9" Content="9" HorizontalAlignment="Left" Margin="80,123,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
         <Button x:Name="button_coma" Content="," HorizontalAlignment="Left" Margin="80,228,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_ulamek" Content="1/x" HorizontalAlignment="Left" Margin="150,158,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_ulamek" Content="1/x" HorizontalAlignment="Left" Margin="150,158,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_ulamek_Click"/>
         <Button x:Name="button_procent" Content="%" HorizontalAlignment="Left" Margin="150,123,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_procent_Click"/>
         <Button x:Name="button_sqrt" Content="√" Margin="150,88,0,0" VerticalAlignment="Top" Height="30" HorizontalAlignment="Left" Width="30" Click="button_sqrt_Click"/>
 
