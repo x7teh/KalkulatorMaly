@@ -109,5 +109,17 @@ namespace Kalkulator.Maly
             ResultBox.Clear();
             ResultBox.Text += liczba1;
         }
+
+        private void button_procent_Click(object sender, RoutedEventArgs e)
+        {
+            liczba1 = double.Parse(ResultBox.Text);
+            if (liczba1 == 0) return;
+            else
+            {
+                liczba1 = liczba1 / 100;
+                ResultBox.Clear();
+                ResultBox.Text += liczba1;
+            }
+        }
     }
 }
