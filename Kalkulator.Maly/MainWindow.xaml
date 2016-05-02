@@ -29,15 +29,15 @@
         <Button x:Name="button_sqrt" Content="√" HorizontalAlignment="Left" Margin="477,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         
         
-        <Button x:Name="button_Copy8" Content="Button" HorizontalAlignment="Left" Margin="477,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_Copy10" Content="Button" HorizontalAlignment="Left" Margin="442,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_Copy11" Content="Button" HorizontalAlignment="Left" Margin="442,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_Copy13" Content="Button" HorizontalAlignment="Left" Margin="407,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_Copy14" Content="Button" HorizontalAlignment="Left" Margin="407,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_Copy19" Content="Button" HorizontalAlignment="Left" Margin="372,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_Copy20" Content="Button" HorizontalAlignment="Left" Margin="372,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_MMiuns" Content="M-" HorizontalAlignment="Left" Margin="477,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_Negative" Content="±" HorizontalAlignment="Left" Margin="442,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_MPlus" Content="M+" HorizontalAlignment="Left" Margin="442,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_C" Content="C" HorizontalAlignment="Left" Margin="407,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_MS" Content="MS" HorizontalAlignment="Left" Margin="407,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_CE" Content="CE" HorizontalAlignment="Left" Margin="372,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_MR" Content="MR" HorizontalAlignment="Left" Margin="372,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
         <Button x:Name="button_backspace" Content="" HorizontalAlignment="Left" Margin="337,143,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_Copy25" Content="Button" HorizontalAlignment="Left" Margin="337,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="button_MC" Content="MC" HorizontalAlignment="Left" Margin="337,108,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
 
     </Grid>
 </Window>
