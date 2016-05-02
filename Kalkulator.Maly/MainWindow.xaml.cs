@@ -23,6 +23,7 @@ namespace Kalkulator.Maly
         private static string operacja;
         private static double liczba1;
         private static double liczba2;
+        private static bool sprawdzResultBox;
         private static bool nastepnaLiczbaKasuje;
         public MainWindow()
         {
@@ -32,7 +33,7 @@ namespace Kalkulator.Maly
 
         private void Clicker(object sender, RoutedEventArgs e)
         {
-            ResultBox.Clear();
+               
             if (nastepnaLiczbaKasuje == true)
             {
                 ResultBox.Clear();
@@ -41,38 +42,29 @@ namespace Kalkulator.Maly
            
             switch (((Button)sender).Content.ToString())
             {
-                case "0":
-                    ResultBox.Text += "0";
-                    break;
                 case "1":
-                    ResultBox.Text += "1";
-                    break;
                 case "2":
-                    ResultBox.Text += "2";
-                    break;
                 case "3":
-                    ResultBox.Text += "3";
-                    break;
                 case "4":
-                    ResultBox.Text += "4";
-                    break;
                 case "5":
-                    ResultBox.Text += "5";
-                    break;
                 case "6":
-                    ResultBox.Text += "6";
-                    break;
                 case "7":
-                    ResultBox.Text += "7";
-                    break;
                 case "8":
-                    ResultBox.Text += "8";
-                    break;
                 case "9":
-                    ResultBox.Text += "9";
+                    if (ResultBox.Text.Equals("0") || sprawdzResultBox)
+                    {
+                        ResultBox.Text = "";
+                    }
+                    ResultBox.Text += ((Button)sender).Content.ToString();
                     break;
-            }
-
+                case "0":
+                    if (ResultBox.Text == "0") return;
+                    if (sprawdzResultBox) ResultBox.Text = "0";
+                    else
+                        ResultBox.Text += "0";
+                    break;
+              }
+            sprawdzResultBox = false;
         }
 
         private void Dzialania(object sender, RoutedEventArgs e)
@@ -100,13 +92,13 @@ namespace Kalkulator.Maly
             switch (operacja)
             {
                 case "+":
-                    liczba1 += liczba; break;
+                    liczba1 += liczba2; break;
                 case "-":
-                    liczba1 -= liczba; break;
+                    liczba1 -= liczba2; break;
                 case "/":
-                    liczba1 /= liczba; break;
+                    liczba1 /= liczba2; break;
                 case "*":
-                    liczba1 *= liczba; break;
+                    liczba1 *= liczba2; break;
             }
 
             ResultBox.Clear();
