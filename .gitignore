@@ -270,3 +270,5 @@ httpd.parse.errors
 obj
 Thumbs.db
 .vs/Kalkulator.Maly/v14/.suo
+/Kalkulator.Maly/bin
+/Kalkulator.Maly/obj
