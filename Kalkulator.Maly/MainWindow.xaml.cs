@@ -200,7 +200,7 @@ namespace Kalkulator.Maly
 
         private void button_MMiuns_Click(object sender, RoutedEventArgs e)
         {
-            //jak wyzej
+            //jak wyzej test test test 
         }
     }
 }
