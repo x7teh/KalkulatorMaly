@@ -195,6 +195,7 @@ namespace Kalkulator.Maly
         {
             //kosmos ziom
             //łaaaaaał!!!
+            //zmianaaaaaa
         }
 
         private void button_MMiuns_Click(object sender, RoutedEventArgs e)
