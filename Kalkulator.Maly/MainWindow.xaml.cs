@@ -147,13 +147,20 @@ namespace Kalkulator.Maly
 
         private void button_Negative_Click(object sender, RoutedEventArgs e)
         {
-            liczba1 = double.Parse(ResultBox.Text);
-            if (liczba1 == 0)
+            double tmp = double.Parse(ResultBox.Text);
+
+            if (tmp > 0)
+            {
+                ResultBox.Text = string.Concat("-", ResultBox.Text);
+            }
+            else if (tmp < 0)
+            {
+                ResultBox.Text = ResultBox.Text.Remove(0, 1);
+            }
+            else
+            {
                 return;
-            liczba1 *= (-1);
-            ResultBox.Clear();
-            ResultBox.Text += liczba1; // tylko że po naciśnieciu = zeruje mi ...
-            
+            }
         }
     }
 }
