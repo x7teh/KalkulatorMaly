@@ -23,6 +23,7 @@ namespace Kalkulator.Maly
         private static string operacja;
         private static double liczba1;
         private static double liczba2;
+        private static double? memory = null;
         private static double wynik;
         private static bool sprawdzResultBox;
         private static bool nastepnaLiczbaKasuje;
@@ -161,6 +162,13 @@ namespace Kalkulator.Maly
             {
                 return;
             }
+        }
+
+        private void button_MC_Click(object sender, RoutedEventArgs e)
+        {
+            memory = null;
+            memorylabel.Content = "";
+
         }
     }
 }
