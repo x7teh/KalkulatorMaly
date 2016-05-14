@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Kalkulator" Height="287" Width="193">
     <Grid Margin="0,0,2,0">
+        
         <TextBox x:Name="ResultBox" Height="38" Margin="10,10,9,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" FontFamily="Calibri" FontSize="26" FlowDirection="RightToLeft" Background="{x:Null}" Text="0" HorizontalAlignment="Center"/>
         <Button x:Name="button_Equals" Content="=" HorizontalAlignment="Left" Margin="150,193,0,0" VerticalAlignment="Top" Width="30" Height="65" Click="button_Equals_Click"/>
         <Button x:Name="button_plus" Content="+" HorizontalAlignment="Left" Margin="115,228,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Dzialania"/>
