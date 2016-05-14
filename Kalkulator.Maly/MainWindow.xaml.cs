@@ -20,7 +20,7 @@ namespace Kalkulator.Maly
     /// </summary>
     public partial class MainWindow : Window
     {
-        private static string operacja;
+        private static Operacja operacja;
         private static double liczba1;
         private static double liczba2;
         private static double? memory = null;
@@ -74,13 +74,13 @@ namespace Kalkulator.Maly
             switch (((Button)sender).Content.ToString())
             {
                 case "+":
-                    operacja = "+"; break;
+                    operacja = Operacja.Add; break;
                 case "-":
-                    operacja = "-"; break;
+                    operacja = Operacja.Substract; break;
                 case "*":
-                    operacja = "*"; break;
+                    operacja = Operacja.Multiply; break;
                 case "/":
-                    operacja = "/"; break;
+                    operacja = Operacja.Divide; break;
 
             }
             liczba1 = double.Parse(ResultBox.Text);
@@ -94,14 +94,16 @@ namespace Kalkulator.Maly
 
             switch (operacja)
             {
-                case "+":
+                case Operacja.Add:
                     wynik = liczba1 + liczba2; break;
-                case "-":
+                case Operacja.Substract:
                     wynik = liczba1 - liczba2; break;
-                case "/":
+                case Operacja.Divide:
                     wynik = liczba1 / liczba2; break;
-                case "*":
+                case Operacja.Multiply:
                     wynik = liczba1 * liczba2; break;
+                default:
+                    return;
             }
             
             ResultBox.Clear();
