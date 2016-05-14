@@ -170,5 +170,33 @@ namespace Kalkulator.Maly
             memorylabel.Content = "";
 
         }
+
+        private void button_MR_Click(object sender, RoutedEventArgs e)
+        {
+            if (memory != null)
+                ResultBox.Text = memory.ToString();
+            nastepnaLiczbaKasuje = true;
+        }
+
+        private void button_MS_Click(object sender, RoutedEventArgs e)
+        {
+            liczba1 = double.Parse(ResultBox.Text);
+            if (liczba1 != 0)
+            {
+                memory = liczba1;
+                memorylabel.Content = "M";
+                nastepnaLiczbaKasuje = true;
+            }
+        }
+
+        private void button_MPlus_Click(object sender, RoutedEventArgs e)
+        {
+            //kosmos ziom
+        }
+
+        private void button_MMiuns_Click(object sender, RoutedEventArgs e)
+        {
+            //jak wyzej
+        }
     }
 }
