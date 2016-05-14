@@ -144,5 +144,16 @@ namespace Kalkulator.Maly
             ResultBox.Text += wynik;
             nastepnaLiczbaKasuje = true;
         }
+
+        private void button_Negative_Click(object sender, RoutedEventArgs e)
+        {
+            liczba1 = double.Parse(ResultBox.Text);
+            if (liczba1 == 0)
+                return;
+            liczba1 *= (-1);
+            ResultBox.Clear();
+            ResultBox.Text += liczba1; // tylko że po naciśnieciu = zeruje mi ...
+            
+        }
     }
 }
