@@ -194,6 +194,7 @@ namespace Kalkulator.Maly
         private void button_MPlus_Click(object sender, RoutedEventArgs e)
         {
             //kosmos ziom
+            //łaaaaaał!!!
         }
 
         private void button_MMiuns_Click(object sender, RoutedEventArgs e)
