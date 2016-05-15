@@ -35,7 +35,8 @@ namespace Kalkulator.Maly
 
         private void Clicker(object sender, RoutedEventArgs e)
         {
-               
+            if (!(sender is Button) || ResultBox.Text.Length == ResultBox.MaxLength)
+                return;
             if (nastepnaLiczbaKasuje == true)
             {
                 ResultBox.Clear();
@@ -229,6 +230,11 @@ namespace Kalkulator.Maly
             }
 
         }
-     
+
+        private void button_C_Click(object sender, RoutedEventArgs e)
+        {
+            ResultBox.Text = "0";
+            nastepnaLiczbaKasuje = false;
+        }
     }
 }
