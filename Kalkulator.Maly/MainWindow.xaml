@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Kalkulator" Height="287" Width="193" ResizeMode="NoResize" Icon="icon.ico">
+        Title="Kalkulator" Height="287" Width="193" ResizeMode="NoResize" Icon="icon.ico" KeyDown="Window_KeyDown" TextInput="Window_TextInput">
     <Grid>
         <TextBox x:Name="ResultBox" Height="38" Margin="10,10,9,0" TextWrapping="NoWrap" TextAlignment="Right" VerticalAlignment="Top" Width="164" FontFamily="Calibri" FontSize="26" Background="{x:Null}" Text="0" HorizontalAlignment="Center" MaxLength="11" MaxLines="1" IsReadOnly="True"/>
 
