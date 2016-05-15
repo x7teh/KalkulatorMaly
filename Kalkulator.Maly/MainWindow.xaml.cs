@@ -236,5 +236,37 @@ namespace Kalkulator.Maly
             ResultBox.Text = "0";
             nastepnaLiczbaKasuje = false;
         }
+
+        private void button_backspace_Click(object sender, RoutedEventArgs e)
+        {
+            string nowyResultBox;
+            if (ResultBox.Text == "0")
+                return;
+            StringBuilder tekstResultBox = new StringBuilder(ResultBox.Text);
+            int znakiDoUsuniecia = 1;
+            if (ResultBox.Text.Length > 2)
+            {
+                if (tekstResultBox[tekstResultBox.Length - 2].ToString() == ",")
+                    znakiDoUsuniecia = 2;
+            }
+            if (tekstResultBox.Length > 1)
+                nowyResultBox = tekstResultBox.Remove(tekstResultBox.Length - znakiDoUsuniecia, znakiDoUsuniecia).ToString();
+            else
+                nowyResultBox = "0";
+
+            ResultBox.Text = nowyResultBox;
+        }
+
+        private void button_coma_Click(object sender, RoutedEventArgs e)
+        {
+            if (ResultBox.Text.Contains(",") || ResultBox.Text.Length == ResultBox.MaxLength)
+                return;
+
+            if (nastepnaLiczbaKasuje == true)
+                ResultBox.Text = "0,";
+
+            ResultBox.Text += ",";
+                
+        }
     }
 }
