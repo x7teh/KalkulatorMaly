@@ -5,40 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kalkulator.Maly"
         mc:Ignorable="d"
-        Title="Kalkulator" Height="287" Width="193" ResizeMode="NoResize">
-    <Grid Margin="0,0,2,0">
-        
+        Title="Kalkulator" Height="297" Width="194" ResizeMode="NoResize" Icon="Hamzasaleem-Stock-Apps-Style-2-Part-2-Calculator.ico">
+    <Grid>
         <TextBox x:Name="ResultBox" Height="38" Margin="10,10,9,0" TextWrapping="NoWrap" TextAlignment="Right" VerticalAlignment="Top" Width="164" FontFamily="Calibri" FontSize="26" Background="{x:Null}" Text="0" HorizontalAlignment="Center" MaxLength="11" MaxLines="1" IsReadOnly="True"/>
+        <Grid></Grid>
         <Button x:Name="button_Equals" Content="=" HorizontalAlignment="Left" Margin="150,193,0,0" VerticalAlignment="Top" Width="30" Height="65" Click="button_Equals_Click"/>
-        <Button x:Name="button_plus" Content="+" HorizontalAlignment="Left" Margin="115,228,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Dzialania"/>
-        <Button x:Name="button_minus" Content="-" HorizontalAlignment="Left" Margin="115,193,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Dzialania"/>
-        <Button x:Name="button_razy" Content="*" HorizontalAlignment="Left" Margin="115,158,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Dzialania"/>
-        <Button x:Name="button_dziel" Content="/" HorizontalAlignment="Left" Margin="115,123,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Dzialania"/>
-        <Button x:Name="button_0" Content="0" HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" Width="65" Height="30" Click="Clicker"/>
-        <Button x:Name="button_1" Content="1" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
-        <Button x:Name="button_2" Content="2" HorizontalAlignment="Left" Margin="45,193,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
-        <Button x:Name="button_3" Content="3" HorizontalAlignment="Left" Margin="80,193,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
-        <Button x:Name="button_4" Content="4" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
-        <Button x:Name="button_5" Content="5" HorizontalAlignment="Left" Margin="45,158,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
-        <Button x:Name="button_6" Content="6" HorizontalAlignment="Left" Margin="80,158,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
-        <Button x:Name="button_7" Content="7" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
-        <Button x:Name="button_8" Content="8" HorizontalAlignment="Left" Margin="45,123,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
-        <Button x:Name="button_9" Content="9" HorizontalAlignment="Left" Margin="80,123,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Clicker"/>
-        <Button x:Name="button_coma" Content="," HorizontalAlignment="Left" Margin="80,228,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_ulamek" Content="1/x" HorizontalAlignment="Left" Margin="150,158,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_ulamek_Click"/>
-        <Button x:Name="button_procent" Content="%" HorizontalAlignment="Left" Margin="150,123,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_procent_Click"/>
-        <Button x:Name="button_sqrt" Content="√" Margin="150,88,0,0" VerticalAlignment="Top" Height="30" HorizontalAlignment="Left" Width="30" Click="button_sqrt_Click"/>
+        <Button x:Name="button_plus" Content="+" Margin="115,228,0,0" Style="{StaticResource StandardButton}" Click="Dzialania"/>
+        <Button x:Name="button_minus" Content="-" Margin="115,193,0,0" Style="{StaticResource StandardButton}" Click="Dzialania"/>
+        <Button x:Name="button_razy" Content="*"  Margin="115,158,0,0" Style="{StaticResource StandardButton}" Click="Dzialania"/>
+        <Button x:Name="button_dziel" Content="/"  Margin="115,123,0,0" Style="{StaticResource StandardButton}" Click="Dzialania"/>
+        <Button x:Name="button_0" Content="0" Margin="10,228,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="65" Height="30" Click="Clicker"/>
+        <Button x:Name="button_1" Content="1" Margin="10,193,0,0" Style="{StaticResource StandardButton}" Click="Clicker"/>
+        <Button x:Name="button_2" Content="2" Margin="45,193,0,0" Style="{StaticResource StandardButton}" Click="Clicker"/>
+        <Button x:Name="button_3" Content="3" Margin="80,193,0,0" Style="{StaticResource StandardButton}" Click="Clicker"/>
+        <Button x:Name="button_4" Content="4" Margin="10,158,0,0" Style="{StaticResource StandardButton}" Click="Clicker"/>
+        <Button x:Name="button_5" Content="5" Margin="45,158,0,0" Style="{StaticResource StandardButton}" Click="Clicker"/>
+        <Button x:Name="button_6" Content="6" Margin="80,158,0,0" Style="{StaticResource StandardButton}" Click="Clicker"/>
+        <Button x:Name="button_7" Content="7" Margin="10,123,0,0" Style="{StaticResource StandardButton}" Click="Clicker"/>
+        <Button x:Name="button_8" Content="8" Margin="45,123,0,0" Style="{StaticResource StandardButton}" Click="Clicker"/>
+        <Button x:Name="button_9" Content="9" Margin="80,123,0,0" Style="{StaticResource StandardButton}" Click="Clicker"/>
+        <Button x:Name="button_coma" Content="," Margin="80,228,0,0" Style="{StaticResource StandardButton}" />
+        <Button x:Name="button_ulamek" Content="1/x" Margin="150,158,0,0" Style="{StaticResource StandardButton}" Click="button_ulamek_Click"/>
+        <Button x:Name="button_procent" Content="%" Margin="150,123,0,0" Style="{StaticResource StandardButton}" Click="button_procent_Click"/>
+        <Button x:Name="button_sqrt" Content="√" Margin="150,88,0,0" Style="{StaticResource StandardButton}" Click="button_sqrt_Click"/>
 
-
-        <Button x:Name="button_MMiuns" Content="M-" HorizontalAlignment="Left" Margin="150,53,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_MMiuns_Click"/>
-        <Button x:Name="button_Negative" Content="±" HorizontalAlignment="Left" Margin="115,88,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_Negative_Click"/>
-        <Button x:Name="button_MPlus" Content="M+" HorizontalAlignment="Left" Margin="115,53,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_MPlus_Click"/>
-        <Button x:Name="button_C" Content="C" HorizontalAlignment="Left" Margin="80,88,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_C_Click"/>
-        <Button x:Name="button_MS" Content="MS" HorizontalAlignment="Left" Margin="80,53,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_MS_Click"/>
-        <Button x:Name="button_CE" Content="CE" HorizontalAlignment="Left" Margin="45,88,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_CE_Click"/>
-        <Button x:Name="button_MR" Content="MR" HorizontalAlignment="Left" Margin="45,53,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_MR_Click"/>
-        <Button x:Name="button_backspace" Content="" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
-        <Button x:Name="button_MC" Content="MC" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="button_MC_Click"/>
+        <Button x:Name="button_MMiuns" Content="M-" Margin="150,53,0,0" Style="{StaticResource StandardButton}" Click="button_MMiuns_Click"/>
+        <Button x:Name="button_Negative" Content="±" Margin="115,88,0,0" Style="{StaticResource StandardButton}" Click="button_Negative_Click"/>
+        <Button x:Name="button_MPlus" Content="M+" Margin="115,53,0,0" Style="{StaticResource StandardButton}" Click="button_MPlus_Click"/>
+        <Button x:Name="button_C" Content="C" Margin="80,88,0,0" Style="{StaticResource StandardButton}" Click="button_C_Click"/>
+        <Button x:Name="button_MS" Content="MS" Margin="80,53,0,0" Style="{StaticResource StandardButton}" Click="button_MS_Click"/>
+        <Button x:Name="button_CE" Content="CE" Margin="45,88,0,0" Style="{StaticResource StandardButton}" Click="button_CE_Click"/>
+        <Button x:Name="button_MR" Content="MR" Margin="45,53,0,0" Style="{StaticResource StandardButton}" Click="button_MR_Click"/>
+        <Button x:Name="button_backspace" Content="" Margin="10,88,0,0" Style="{StaticResource StandardButton}" />
+        <Button x:Name="button_MC" Content="MC" Margin="10,53,0,0" Click="button_MC_Click" Style="{StaticResource StandardButton}"/>
         <Label x:Name="memorylabel" Content="" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
 
     </Grid>
