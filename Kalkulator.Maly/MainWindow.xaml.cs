@@ -115,9 +115,9 @@ namespace Kalkulator.Maly
 
         private void button_procent_Click(object sender, RoutedEventArgs e)
         {
-            if (number2 == 0)   //nie brakuje returna? albo klamerek jakichś?
             number2 = double.Parse(ResultBox.Text);
-            result = (number1 / 100) * number2;
+            if (number2 == 0) return;  // tak?
+            result = number1 * (number2 / 100);
 
             ResultBox.Text = result.ToString();           
             nextTimeErase = true;
