@@ -124,7 +124,7 @@ namespace Kalkulator.Maly
             wynik = (liczba1 / 100) * liczba2;
 
             ResultBox.Clear();
-            ResultBox.Text += wynik;            // jakas funkcje pasowaloby zrobic zeby nie klepac tego ciagle
+            ResultBox.Text += wynik;           
             nastepnaLiczbaKasuje = true;
         }
 
@@ -240,7 +240,7 @@ namespace Kalkulator.Maly
         private void button_backspace_Click(object sender, RoutedEventArgs e)
         {
             string nowyResultBox;
-            if (ResultBox.Text == "0")
+            if (ResultBox.Text == "0" || nastepnaLiczbaKasuje == true)
                 return;
             StringBuilder tekstResultBox = new StringBuilder(ResultBox.Text);
             int znakiDoUsuniecia = 1;
