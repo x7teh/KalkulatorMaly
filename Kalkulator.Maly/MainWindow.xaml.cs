@@ -115,6 +115,7 @@ namespace Kalkulator.Maly
 
         private void button_procent_Click(object sender, RoutedEventArgs e)
         {
+            if (operation != Maly.Operation.Multiply) return;
             number2 = double.Parse(ResultBox.Text);
             if (number2 == 0) return;  // tak?
             result = number1 * (number2 / 100);
