@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace Kalkulator.Maly
 {
@@ -30,7 +32,7 @@ namespace Kalkulator.Maly
                 ResultBox.Clear();
                 nextTimeErase = false;
             }
-        
+
             switch (((Button)sender).Content.ToString())
             {
                 case "1":
@@ -102,7 +104,7 @@ namespace Kalkulator.Maly
                 default:
                     return;
             }
-            
+
             ResultBox.Clear();
             ResultBox.Text += result;
             nextTimeErase = true;
@@ -120,7 +122,7 @@ namespace Kalkulator.Maly
             if (number2 == 0) return;  // tak?
             result = number1 * (number2 / 100);
 
-            ResultBox.Text = result.ToString();           
+            ResultBox.Text = result.ToString();
             nextTimeErase = true;
         }
 
@@ -255,6 +257,70 @@ namespace Kalkulator.Maly
                 ResultBox.Text = "0,";
             else
                 ResultBox.Text += ",";
+        }
+        private void Window_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            Button button = new Button();
+
+            switch (e.Text)
+            {
+                case "1":
+                case "2":
+                case "3":
+                case "4":
+                case "5":
+                case "6":
+                case "7":
+                case "8":
+                case "9":
+                case "0":
+                    button.Content = e.Text;
+                    ClickNumber(button, null);
+                    break;
+                case "%":
+                    button_procent_Click(null, null);
+                    break;
+                case ",":
+                case ".":
+                    button_coma_Click(null, null);
+                    break;
+                case "+":
+                case "-":
+                case "*":
+                case "/":
+                    button.Content = e.Text;
+                    ClickNumber(button, null);
+                    break;
+                case "=":
+                    button_Equals_Click(null, null);
+                    break;
+                default:
+                    return;
+            }
+
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            int keyCode = KeyInterop.VirtualKeyFromKey(e.Key);
+
+            switch (keyCode)
+            {
+                case 8:
+                    button_backspace_Click(null, null);
+                    break;
+                case 13:
+                    button_Equals_Click(null, null);
+                    break;
+                case 27:
+                    Application.Current.Shutdown();
+                    break;
+                case 46:
+                    button_C_Click(null, null);
+                    break;
+                default:
+                    return;
+            }
         }
     }
 }
