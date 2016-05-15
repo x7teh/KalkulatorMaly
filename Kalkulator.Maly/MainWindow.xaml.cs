@@ -193,15 +193,42 @@ namespace Kalkulator.Maly
 
         private void button_MPlus_Click(object sender, RoutedEventArgs e)
         {
-            //kosmos ziom
-            //łaaaaaał!!!
-            //zmianaaaaaa
-            //aaaaaa
+            double nowaPamiec = double.Parse(ResultBox.Text);
+            if (nowaPamiec != 0)
+            {
+                if (memory != null)
+                {
+                    memory += nowaPamiec;
+                    nastepnaLiczbaKasuje = true;
+                }
+                else
+                {
+                    memory = 0 + nowaPamiec;
+                    memorylabel.Content = "M";
+                    nastepnaLiczbaKasuje = true;
+                }
+            }
         }
 
         private void button_MMiuns_Click(object sender, RoutedEventArgs e)
         {
-            //jak wyzej test test test 
+            double nowaPamiec = double.Parse(ResultBox.Text);
+            if (nowaPamiec != 0)
+            {
+                if (memory != null)
+                {
+                    memory -= nowaPamiec;
+                    nastepnaLiczbaKasuje = true;
+                }
+                else
+                {
+                    memory = 0 - nowaPamiec;
+                    memorylabel.Content = "M";
+                    nastepnaLiczbaKasuje = true;
+                }
+            }
+
         }
+     
     }
 }
