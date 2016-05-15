@@ -37,7 +37,7 @@ namespace Kalkulator.Maly
                 case "*":
                 case "/":
                     button.Content = e.Text;
-                    ClickNumber(button, null);
+                    Operation(button, null);
                     break;
                 case "=":
                     button_Equals_Click(null, null);
