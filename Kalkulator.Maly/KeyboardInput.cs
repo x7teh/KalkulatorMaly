@@ -61,7 +61,7 @@ namespace Kalkulator.Maly
                     button_Equals_Click(null, null);
                     break;
                 case 27:
-                    Application.Current.Shutdown();
+                    Close();
                     break;
                 case 46:
                     button_C_Click(null, null);
