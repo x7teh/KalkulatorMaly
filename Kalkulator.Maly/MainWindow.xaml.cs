@@ -262,10 +262,10 @@ namespace Kalkulator.Maly
             if (ResultBox.Text.Contains(",") || ResultBox.Text.Length == ResultBox.MaxLength)
                 return;
 
-            if (nastepnaLiczbaKasuje == true)
+            if (nastepnaLiczbaKasuje)
                 ResultBox.Text = "0,";
-
-            ResultBox.Text += ",";
+            else
+                ResultBox.Text += ",";
                 
         }
     }
