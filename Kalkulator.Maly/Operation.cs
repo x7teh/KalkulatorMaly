@@ -1,9 +1,6 @@
-﻿using System.Windows;
-
-
-namespace Kalkulator.Maly
+﻿namespace Kalkulator.Maly
 {
-    public enum Operacja
+    public enum Operation
     {
         None, 
         Add,
